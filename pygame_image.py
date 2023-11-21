@@ -10,7 +10,7 @@ def main():
     koukaton = pg.image.load("ex01/fig/3.png")
     koukaton = pg.transform.flip(koukaton, True, False)
     bg_img2 = pg.transform.flip(bg_img, True, False)
-    koukaton_3 = pg.transform.rotozoom(koukaton, 5, 1.0)
+    koukaton_3 = pg.transform.rotozoom(koukaton, 3, 1.0)
     koukaton_5 = pg.transform.rotozoom(koukaton, 5, 1.0)
     koukaton_10 = pg.transform.rotozoom(koukaton, 10, 1.0)
     koukaton_20 = pg.transform.rotozoom(koukaton, 20, 1.0)
@@ -30,7 +30,7 @@ def main():
         screen.blit(kk_list[tmr%9], [300, 200])
         pg.display.update()
         tmr += 1        
-        clock.tick(100)
+        clock.tick(10)
 
 
 if __name__ == "__main__":
